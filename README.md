@@ -3,9 +3,7 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). This app uses Nodejs for the backend and pnpm for the package manager.
 
-The purpose of this app was just to learn and illustrate some idiomatic Nextjs, React and typescript design patterns.
-
-This was an interesting exercise as I initally tried to build everything as a client component, which caused the app to fail because making fetch calls from the browser were getting block by CORS. Turns out Next.js CORS SSR/client integration challenges are common and Next.js had a handy solution to this called Server Actions. This involves creating a local API route in app/api/quote, which functions as server-side quote fetching proxy. This gives the app a simple clean design that overcomes CORS blocking. 
+The purpose of this app was just to learn some Nextjs, React and typescript design patterns. I implemented a simple local API route in app/api/quote, which functions as a server-side data fetching proxy. I initially tried to create the app as a client component, but the fetch request was blocked by CORS in the browser. Using Next.js server actions allowed me to get around the CORS blocking, and gives the app a relatively simple design.
 
 UI <-> Server API proxy <-> External API
 
