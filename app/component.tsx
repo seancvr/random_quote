@@ -1,11 +1,6 @@
  "use client";
 import { JSX, useState, useEffect } from "react";
 
-interface ApiReturnData {
-  content: string;
-  author: string;
-}
-
 export default function RandomQuote(): JSX.Element {
 
   const [quote, setQuote] = useState<ApiReturnData>({
@@ -13,8 +8,8 @@ export default function RandomQuote(): JSX.Element {
     author: "",
   });
 
-  const [loading, setLoading] = useState<boolean>(false);
-  const [trigger, setTrigger] = useState<number>(0);
+  const [loading, setLoading] = useState(false);
+  const [trigger, setTrigger] = useState(0);
 
   async function fetchQuote(): Promise<void> {
     setLoading(true);

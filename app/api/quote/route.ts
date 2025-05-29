@@ -1,11 +1,5 @@
 // app/api/quote/route.ts
 
-interface ZenQuoteApiResponse {
-  q: string;
-  a: string;
-  h: string;
-}
-
 export async function GET(): Promise<Response> {
   let data: ZenQuoteApiResponse[];
 
