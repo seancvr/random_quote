@@ -13,7 +13,7 @@ Clone the git repo:
 ```
 git clone https://github.com/seancvr/random_quote.git
 ```
-Install the dependcies with pnpm:
+Install the dependencies with pnpm:
 
 ```
 pnpm i
