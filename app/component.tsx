@@ -45,11 +45,11 @@ export default function RandomQuote(): JSX.Element {
       </button>
       <div>
         {loading ? (
-          <p>"Loading..."</p>
+          <p>Loading...</p>
         ) : (
         <blockquote>
           {quote.content}
-          <footer>'{quote.author}'</footer>
+          <footer>{quote.author}</footer>
         </blockquote>
         )}
       </div>
